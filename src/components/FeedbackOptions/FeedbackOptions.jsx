@@ -4,9 +4,9 @@ import {ButtonList, Button} from './FeedbackOptions.styled'
 export const FeedbackOptions = ({options,onLeaveFeedback}) => {
     return (
         <ButtonList>
-            {options.map(feedback => (
-                <li key={feedback}>
-                    <Button onClick={() => onLeaveFeedback(feedback)}>{feedback}</Button>
+            {options.map(option => (
+                <li key={option}>
+                    <Button onClick={() => onLeaveFeedback(option)}>{option}</Button>
                 </li>
             ))}
         </ButtonList>
